@@ -2,8 +2,8 @@
 
 function print_help(){
     echo "Usage:\n";
-    echo "a) python3 cypher.py YOUR_INT [OPTION] < YOUR_FILE_TO_ENCRYPT\n";
-    echo "b) python3 cypher.py YOUR_SOURCE_CHAR YOUR_DESTINATION_CHAR [OPTION] < YOUR_FILE_TO_ENCRYPT\n";
+    echo "a) php cypher.php YOUR_INT [OPTION] < YOUR_FILE_TO_ENCRYPT\n";
+    echo "b) php cypher.php YOUR_SOURCE_CHAR YOUR_DESTINATION_CHAR [OPTION] < YOUR_FILE_TO_ENCRYPT\n";
     echo "[OPTION]:\n";
     echo "-h --help\n";
     echo "   prints usage (this).\n\n";
@@ -44,6 +44,7 @@ function c_cypher($n, $overwrite){
                     $result .= $char;
                 }
             }
+            echo $result;
             fwrite($out_file, $result);
         }
     }
