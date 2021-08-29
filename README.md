@@ -7,11 +7,15 @@ Outputs the encrypted data to "zasifrovana(CYPHER_KEY).txt" and stdout.
 
 ### Usage:
 
-a) `python3 cypher.py YOUR_INT [OPTION] < YOUR_FILE_TO_ENCRYPT`
-
+**Python3 version:**  
+a) `python3 cypher.py YOUR_INT [OPTION] < YOUR_FILE_TO_ENCRYPT`  
 b) `python3 cypher.py YOUR_SOURCE_CHAR YOUR_DESTINATION_CHAR [OPTION] < YOUR_FILE_TO_ENCRYPT`
 
-[OPTION]:  
+**PHP version:**  
+a) `php cypher.php YOUR_INT [OPTION] < YOUR_FILE_TO_ENCRYPT`  
+b) `php cypher.php YOUR_SOURCE_CHAR YOUR_DESTINATION_CHAR [OPTION] < YOUR_FILE_TO_ENCRYPT`
+
+**[OPTION]:**  
 **-h --help**  
 prints usage (this).
 
@@ -27,7 +31,5 @@ if destination file exists, overwrites it. Otherwise doesn't execute.
 
 - cypher applies only to characters from english alphabet (both lowercase and uppercase)  
   other characters are skipped
-
 - `YOUR_INT` can be either positive or negative
-
 - `YOUR_SOURCE_CHAR` and `YOUR_DESTINATION_CHAR` aren't case sensitive
