@@ -20,6 +20,9 @@ function recommend_help(){
 
 function c_cypher($n, $overwrite){
     $n %= 26;
+    if($n < 0){
+        $n += 26;
+    }
     if(file_exists("zasifrovana(". $n .").txt") && !$overwrite){
         echo "File already exists. If you want to overwrite, run the command with --force-overwrite or -f\n";
         die();
